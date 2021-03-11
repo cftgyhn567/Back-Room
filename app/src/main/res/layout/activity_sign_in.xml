@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SignIn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/SignIn"
-    android:background="#59000000"
-    tools:context=".SignIn"
-    android:screenOrientation="sensorLandscape">
+    android:background="#85CEEF"
+    android:screenOrientation="sensorLandscape"
+    tools:context=".SignIn">
 
 
     <TextView
@@ -16,7 +15,7 @@
         android:layout_width="400dp"
         android:layout_height="250dp"
         android:layout_marginBottom="32dp"
-        android:background="#CD9D0C"
+        android:background="#00BCD4"
         android:text="輸入帳號密碼"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -59,4 +58,14 @@
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/signIn"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

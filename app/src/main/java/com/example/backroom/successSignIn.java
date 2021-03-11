@@ -24,6 +24,9 @@ public class successSignIn extends AppCompatActivity {
         Log.v("asdf", password);
         if(Email.equals("aaaa") && password.equals("0000")){
             printData.setText("登入成功");
+            Intent toPlay = new Intent(this, playTheGame.class);
+            startActivity(toPlay);
+            finish();
         }else{
             printData.setText("登入失敗");
         }
