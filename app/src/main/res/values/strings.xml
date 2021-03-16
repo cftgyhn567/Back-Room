@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Back Room</string>
+    <string name="userName">userName</string>
+    <string name="rank">001</string>
 </resources>

@@ -24,10 +24,11 @@
         android:background="#85CEEF"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/menuBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taitleBackground"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_weight="70"
-        tools:layout_editor_absoluteX="149dp" />
+        app:layout_constraintVertical_weight="70" />
 
     <TextView
         android:id="@+id/menuBackground"
@@ -50,7 +51,8 @@
         android:id="@+id/rank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  001"
+        android:layout_marginStart="16dp"
+        android:text="@string/rank"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/avatar"
         app:layout_constraintTop_toTopOf="@+id/taitleBackground" />
@@ -59,7 +61,8 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  userName"
+        android:layout_marginStart="16dp"
+        android:text="@string/userName"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/rank"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,7 +74,6 @@
         android:layout_height="wrap_content"
         android:indeterminate="false"
         android:max="100"
-        android:progress="20"
         android:progressTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="@+id/avatar"
         app:layout_constraintEnd_toEndOf="@+id/name"
@@ -209,14 +211,127 @@
         app:layout_constraintTop_toTopOf="@+id/taitleBackground"
         app:srcCompat="@drawable/point" />
 
+    <TextView
+        android:id="@+id/staff0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox0"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox0"
+        app:layout_constraintStart_toStartOf="@+id/roleBox0"
+        app:layout_constraintTop_toTopOf="@+id/roleBox0" />
+    <TextView
+        android:id="@+id/staff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox1"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox1"
+        app:layout_constraintStart_toStartOf="@+id/roleBox1"
+        app:layout_constraintTop_toTopOf="@+id/roleBox1" />
+    <TextView
+        android:id="@+id/staff2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox2"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox2"
+        app:layout_constraintStart_toStartOf="@+id/roleBox2"
+        app:layout_constraintTop_toTopOf="@+id/roleBox2" />
+    <TextView
+        android:id="@+id/staff3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox3"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox3"
+        app:layout_constraintStart_toStartOf="@+id/roleBox3"
+        app:layout_constraintTop_toTopOf="@+id/roleBox3" />
+    <TextView
+        android:id="@+id/staff4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox4"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox4"
+        app:layout_constraintStart_toStartOf="@+id/roleBox4"
+        app:layout_constraintTop_toTopOf="@+id/roleBox4" />
+    <TextView
+        android:id="@+id/staff5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox5"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox5"
+        app:layout_constraintStart_toStartOf="@+id/roleBox5"
+        app:layout_constraintTop_toTopOf="@+id/roleBox5" />
+    <TextView
+        android:id="@+id/staff6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox6"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox6"
+        app:layout_constraintStart_toStartOf="@+id/roleBox6"
+        app:layout_constraintTop_toTopOf="@+id/roleBox6" />
+    <TextView
+        android:id="@+id/staff7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox7"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox7"
+        app:layout_constraintStart_toStartOf="@+id/roleBox7"
+        app:layout_constraintTop_toTopOf="@+id/roleBox7" />
+    <TextView
+        android:id="@+id/staff8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox8"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox8"
+        app:layout_constraintStart_toStartOf="@+id/roleBox8"
+        app:layout_constraintTop_toTopOf="@+id/roleBox8" />
+    <TextView
+        android:id="@+id/staff9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox9"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox9"
+        app:layout_constraintStart_toStartOf="@+id/roleBox9"
+        app:layout_constraintTop_toTopOf="@+id/roleBox9" />
+    <TextView
+        android:id="@+id/staff10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox10"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox10"
+        app:layout_constraintStart_toStartOf="@+id/roleBox10"
+        app:layout_constraintTop_toTopOf="@+id/roleBox10" />
+    <TextView
+        android:id="@+id/staff11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        app:layout_constraintBottom_toBottomOf="@+id/roleBox11"
+        app:layout_constraintEnd_toEndOf="@+id/roleBox11"
+        app:layout_constraintStart_toStartOf="@+id/roleBox11"
+        app:layout_constraintTop_toTopOf="@+id/roleBox11" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#00FFFFFF"
+        android:onClick="Click"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/roleBox9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taitleBackground"
-        tools:layout_editor_absoluteX="33dp"
-        android:onClick="Click"/>
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
