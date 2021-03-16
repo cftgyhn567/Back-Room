@@ -13,7 +13,7 @@ public class playTheGame extends AppCompatActivity {
     private ImageView point;
     private ProgressBar exc;
     private int excInt, rankInt=1;
-    private SharedPreferences
+    //private SharedPreferences
     String rank;
 
     @Override
