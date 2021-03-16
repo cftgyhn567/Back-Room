@@ -14,7 +14,7 @@ public class playTheGame extends AppCompatActivity {
     private ImageView point;
     private TextView rank;
     private ProgressBar exc;
-    private int excInt, rankInt=1;
+    private int rankInt=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class playTheGame extends AppCompatActivity {
     }
 
     public void Click(View view) {
-        if(excInt>=100){
+        if(exc.getProgress()>=exc.getMax()){
             Log.v("text", "on click");
             exc.setProgress(0);
             rankInt++;
