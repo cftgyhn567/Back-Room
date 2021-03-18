@@ -1,391 +1,386 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".playTheGame"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".playTheGame">
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <RelativeLayout
+        android:id="@+id/taitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="#3F51B5">
 
-        <RelativeLayout
-            android:id="@+id/taitle"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="20"
-            android:background="#3F51B5">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/hihihi" />
 
-            <ImageView
-                android:id="@+id/avatar"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/hihihi" />
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/avatar"
+            android:text="@string/rank"
+            android:textSize="30sp" />
 
-            <TextView
-                android:id="@+id/rank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="10dp"
-                android:layout_toEndOf="@id/avatar"
-                android:text="@string/rank"
-                android:textSize="30sp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/rank"
+            android:text="@string/userName"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/rank" />
 
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="10dp"
-                android:layout_toEndOf="@id/rank"
-                android:text="@string/userName"
-                android:textSize="30sp"
-                app:layout_constraintStart_toEndOf="@+id/rank" />
+    </RelativeLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/body"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="68"
-            android:background="#85CEEF">
-
-            <LinearLayout
-                android:id="@+id/linearLayout2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/roleBox0"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff0"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox1"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox2"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox3"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox4"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox5"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/roleBox6"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox7"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox8"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox9"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox10"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp">
-
-                    <ImageView
-                        android:id="@+id/roleBox11"
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/boxl" />
-
-                    <TextView
-                        android:id="@+id/staff11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="空" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/point"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                app:srcCompat="@drawable/point" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#00FFFFFF"
-                android:onClick="Click" />
-
-        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="68"
+        android:background="#85CEEF">
 
         <LinearLayout
-            android:id="@+id/menu"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
-            android:background="#3F51B5"
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/roleBox0"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox3"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox4"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox5"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
-        <ProgressBar
-            android:id="@+id/experience"
-            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/roleBox6"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox7"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox8"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox9"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox10"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <ImageView
+                    android:id="@+id/roleBox11"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/boxl" />
+
+                <TextView
+                    android:id="@+id/staff11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="空" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/point" />
+
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:indeterminate="false"
-            android:max="100"
-            android:progressTint="#03A9F4"
-            app:layout_constraintBottom_toBottomOf="@+id/avatar"
-            app:layout_constraintEnd_toEndOf="@+id/name"
-            app:layout_constraintStart_toEndOf="@+id/avatar" />
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:onClick="Click" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#3F51B5"
+        android:orientation="horizontal">
+
+
 
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/experience"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/avatar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
